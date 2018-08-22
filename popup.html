@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Linked Draft</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans" type="text/css">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+    crossorigin="anonymous">
+  <script src="jquery-3.2.1.min.js"></script>
+  <script src="popup.js"></script>
+  <style>
+    html,
+    body {
+      font-family: 'Open-Sans', sans-serif;
+      font-size: 14px;
+      margin: 0;
+      min-height: 180px;
+      padding: 0;
+      width: 384px;
+    }
+
+    h1 {
+      font-family: 'Menlo', monospace;
+      font-size: 22px;
+      font-weight: 400;
+      margin: 0;
+      color: #1178b3;
+    }
+
+    img {
+      width: 30px;
+    }
+
+    .modal-header {
+      align-items: center;
+      border-bottom: 0.5px solid #dadada;
+    }
+
+    .modal-content {
+      padding: 0 22px;
+    }
+
+    .modal-icons {
+      border-top: 0.5px solid #dadada;
+      height: 50px;
+      width: 100%;
+    }
+
+    .logo {
+      padding: 16px
+    }
+
+    .logo-icon {
+      vertical-align: text-bottom;
+      margin-right: 12px;
+    }
+
+    .version {
+      color: #444444;
+      font-size: 18px;
+    }
+
+    .flex-container {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 20px;
+    }
+
+    .flex {
+      opacity: 1;
+    }
+
+    .flex .fa {
+      font-size: 20px;
+      color: #ffffff;
+    }
+
+    .button {
+      background-color: #1178b3;
+      border: none;
+      color: white;
+      padding: 5px 10px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 14px;
+    }
+
+    button:disabled {
+      background-color: #eaeaea;
+      color: #111;
+      border: none;
+      padding: 5px 10px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="modal-header">
+    <h1 class="logo">
+      <img src="images/logo.png" alt="Linked Draft" class="logo-icon">Linked Draft
+      <span class="version">(1.0.0)</span>
+    </h1>
+  </div>
+  <div class="modal-content">
+    <p>Easily save LinkedIn post drafts.</p>
+  </div>
+  <div class="modal-icons">
+    <div class="flex-container">
+      <div class="flex">
+        <button id="btnSave" class="button">
+          <i class="fa fa-save"></i> Save Draft</button>
+        <button id="btnLoad" class="button">
+          <i class="fa fa-load"></i> Load Draft</button>
+      </div>
+    </div>
+  </div>
+  <hr/>
+  <ul>
+
+  </ul>
+</body>
+
+</html>
